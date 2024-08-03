@@ -1,0 +1,7 @@
+## Interface: 0000
+## Title: GuildMicroButton
+## Notes: Provides a button with common guild information below the social button. Inspired by a WeakAura https://wago.io/Cx_wsXks4
+## Version: 1.0.0
+## Dependencies: 
+
+GuildMicroButton.lua
