@@ -48,8 +48,8 @@ end
 
 local function SpawnContextMenu() 
 	MenuUtil.CreateContextMenu(UIParent, function(owner, menu)
-		local inviteMenu = menu:CreateButton("Einladen", nil)
-		local whisperMenu = menu:CreateButton("Flüstern", nil)
+		local inviteMenu = menu:CreateButton(CHAT_INVITE_SEND, nil)
+        local whisperMenu = menu:CreateButton(CHAT_MSG_WHISPER_INFORM, nil)
 		for _, member in ipairs(GuildMembers) do
 			if not (member.name == PlayerName) then
 				--local _,_,_,memberClassColorHex = GetClassColor(Member.class)
