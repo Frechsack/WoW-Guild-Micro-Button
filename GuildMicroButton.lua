@@ -25,7 +25,7 @@ end
 local function SetGuildButtonText() 
 	local numTotalMembers, numOnlineMembers = GetNumGuildMembers();
 	if GuildButtonText == nil then
-		GuildButtonText = GuildButton:CreateFontString(nil, "OVERLAY", "GameTooltipText")
+		GuildButtonText = GuildButton:CreateFontString(nil, "OVERLAY", "GameFontHighlightSmall")
 		GuildButtonText:SetPoint("BOTTOM", 0, 0)
 	end
 	GuildButtonText:SetText(numOnlineMembers)
