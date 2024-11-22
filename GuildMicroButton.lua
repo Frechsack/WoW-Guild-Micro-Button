@@ -23,7 +23,7 @@ local function EscapeMemberNote(note)
 end
 
 local function SetGuildButtonText() 
-	local numTotalMembers, numOnlineMaxLevelMembers, numOnlineMembers = GetNumGuildMembers();
+	local numTotalMembers, numOnlineMembers = GetNumGuildMembers();
 	if GuildButtonText == nil then
 		GuildButtonText = GuildButton:CreateFontString(nil, "OVERLAY", "GameTooltipText")
 		GuildButtonText:SetPoint("BOTTOM", 0, 0)
@@ -69,7 +69,7 @@ end
 
 local function ShowTooltip()
 	local guildName, _ = GetGuildInfo('player')
-	local total, _, online = GetNumGuildMembers()
+	local total, online = GetNumGuildMembers()
 	local textColorR, textColorG, textColorB, textColorA = 1, 1, 1, 1
 	GameTooltip:SetOwner(GuildButton, "ANCHOR_RIGHT")
         
